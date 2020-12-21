@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header__container port-header">
+        <a class="header__logo" href=""
+          ><span class="header__logo--accent">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="nav list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="">Портфолио</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contakts">
+          <a class="contakts__link header__link" href="mailto:info@example.com">
+            <svg width="16" height="12" class="contakts__icon">
+              <use href="./images/spriteoptim.svg#envelope"></use>
+            </svg>
+            info@example.com</a
+          >
+          <a class="contakts__link header__link" href="tel:+380991111111">
+            <svg width="10" height="16" class="contakts__icon">
+              <use href="./images/spriteoptim.svg#smartphone"></use>
+            </svg>
+            +38 099 111 11 11</a
+          >
+        </div>
+        <button type="button" class="menu-button">
+          <svg width="40px" height="40px" class="menu-button__icon">
+            <use
+              class="menu-button__icon--menu"
+              href="./images/spriteoptim.svg#menu"
+            ></use>
+            <!-- <use class="menu-button__icon--menu-close" href="./images/spriteoptim.svg#menu-close"></use> -->
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <!--<nav class="filter-collection">
+                    <button class="filter" type="button">Все</button>
+                    <button class="filter" type="button">Веб-сайты</button>
+                    <button class="filter" type="button">Приложения</button>
+                    <button class="filter" type="button">Дизайн</button>
+                    <button class="filter" type="button">Маркетинг</button>
+                </nav> -->
+          <form class="filter-collection">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="filter"
+              value="filter"
+              id="filter-1"
+            />
+            <label class="filter" for="filter-1">Все</label>
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="filter"
+              value="filter"
+              id="filter-2"
+            />
+            <label class="filter" for="filter-2">Веб-сайты</label>
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="filter"
+              value="filter"
+              id="filter-3"
+            />
+            <label class="filter" for="filter-3">Приложения</label>
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="filter"
+              value="filter"
+              id="filter-4"
+            />
+            <label class="filter" for="filter-4">Дизайн</label>
+            <input
+              type="checkbox"
+              class="visually-hidden"
+              name="filter"
+              value="filter"
+              id="filter-5"
+            />
+            <label class="filter" for="filter-5">Маркетинг</label>
+          </form>
+          <ul class="list cards-collection">
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio1-opt.jpg"
+                    alt="Технокряк"
+                  />
+                  <p class="work-example__description">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">Технокряк</h2>
+                  <p class="work-example__area">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio2-opt.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                  />
+                  <p class="work-example__description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Sit, veniam. Nostrum praesentium quaerat magni odit mollitia
+                    vero ad consequuntur nobis pariatur exercitationem cum,
+                    fugiat voluptatibus quisquam? Dicta fugiat officiis rem!
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="work-example__area">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio3-opt.jpg"
+                    alt="Ресторан Seafood"
+                  />
+                  <p class="work-example__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore a dolorem, debitis est recusandae amet hic
+                    quisquam. Non ullam iure nihil quas quibusdam, inventore
+                    cupiditate excepturi, similique, blanditiis laborum
+                    architecto?
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">Ресторан Seafood</h2>
+                  <p class="work-example__area">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio4-opt.jpg"
+                    alt="Проект Prime"
+                  />
+                  <p class="work-example__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aut dolores adipisci ipsum reprehenderit ut nostrum sapiente
+                    vel saepe, vitae perferendis commodi quo eum aperiam
+                    mollitia reiciendis rerum beatae esse aliquid.
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">Проект Prime</h2>
+                  <p class="work-example__area">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio5-opt.jpg"
+                    alt="Проект Boxes"
+                  />
+                  <p class="work-example__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Suscipit id laboriosam facere reiciendis quos, iusto itaque,
+                    voluptas fugit ipsum delectus autem debitis maiores magnam
+                    eaque, recusandae ea sit quod! Cum!
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">Проект Boxes</h2>
+                  <p class="work-example__area">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio6-opt.jpg"
+                    alt="Inspiration has no Borders"
+                  />
+                  <p class="work-example__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero quibusdam optio cumque dolore reprehenderit nobis
+                    quis sequi incidunt esse? Rem exercitationem consequuntur
+                    optio cupiditate quisquam impedit autem debitis fuga itaque?
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="work-example__area">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio7-opt.jpg"
+                    alt="Издание Limited Edition"
+                  />
+                  <p class="work-example__description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aut, voluptatibus illo incidunt itaque aliquam et voluptatem
+                    nobis, exercitationem quos libero delectus deserunt, quae in
+                    sunt praesentium! Reiciendis sint enim nihil?
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">Издание Limited Edition</h2>
+                  <p class="work-example__area">Дихайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio8-opt.jpg"
+                    alt="Проект LAB"
+                  />
+                  <p class="work-example__description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Fuga voluptatum expedita facere repellendus voluptates nulla
+                    omnis, tenetur quibusdam voluptatibus nam sapiente, placeat
+                    optio dolore atque consectetur possimus nisi at repellat?
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">Проект LAB</h2>
+                  <p class="work-example__area">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-example">
+              <a class="work-example__link" href="">
+                <div class="work-example__image-wrapper">
+                  <img
+                    width="370"
+                    height="294"
+                    src="./images/portfolio/portfolio9-opt.jpg"
+                    alt="Growing Business"
+                  />
+                  <p class="work-example__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis provident atque vel sed omnis fuga voluptas,
+                    deleniti doloribus quasi? Deserunt, architecto atque.
+                    Deserunt laudantium omnis et nam ipsum placeat beatae.
+                  </p>
+                </div>
+                <div class="work-example__text-wrapper">
+                  <h2 class="work-example__title">Growing Business</h2>
+                  <p class="work-example__area">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="logo-box">
+          <a class="footer__logo" href=""
+            ><span class="footer__logo--accent">Web</span>Studio</a
+          >
+          <address class="address">
+            <p class="address__city">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="footer__link address__mail" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <a class="footer__link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </address>
+        </div>
+
+        <div class="join">
+          <b class="footer-area__title">присоединяйтесь</b>
+          <ul class="list join__list">
+            <li>
+              <a class="socmedia__link join__link" href="">
+                <svg width="20" height="20" class="join__icon">
+                  <use href="./images/spriteoptim.svg#instagram"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="socmedia__link join__link" href="">
+                <svg width="20" height="20" class="join__icon">
+                  <use href="./images/spriteoptim.svg#twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="socmedia__link join__link" href="">
+                <svg width="20" height="20" class="join__icon">
+                  <use href="./images/spriteoptim.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socmedia__link join__link" href="">
+                <svg width="20" height="20" class="join__icon">
+                  <use href="./images/spriteoptim.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="signup">
+          <form>
+            <b class="footer-area__title">Подпишитесь на рассылку</b>
+            <input
+              class="signup__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="btn signup__btn">
+              Подписаться
+              <svg width="24" height="24" class="signup__icon">
+                <use href="./images/spriteoptim.svg#plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

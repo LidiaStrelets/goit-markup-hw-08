@@ -1,0 +1,49 @@
+.checkbox {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+}
+.checkbox__choose {
+  /* кастомный чекбокс */
+  display: inline-block;
+  position: relative;
+
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 1px solid $headers-color;
+  border-radius: 4px;
+  transition: background-color 250ms $cubic;
+  .checkbox:hover & {
+    border-color: $accent-color;
+  }
+  .checkbox__input:checked + & {
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+  .checkbox__input:focus + & {
+    border-color: $accent-color;
+  }
+}
+.checkbox__label {
+  display: inline-block;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.checkbox__icon {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  fill: $white-color;
+}
+.checkbox__link {
+  color: $accent-color;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,40 @@
+.modal {
+  position: fixed;
+  //   top: 93px;
+  left: 50%;
+
+  transform: translate(-50%) scale(1);
+  transition: transform 250ms $cubic;
+
+  width: 450px;
+
+  background-color: $white-color;
+  border-radius: 4px;
+}
+.close {
+  /* кнопка закрытия мод окна */
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @include flex-container;
+
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+
+  background-color: $white-color;
+  border: 1px solid $close-border-color;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.close__icon {
+  fill: $black-color;
+  transition: fill 250ms $cubic;
+  .close:hover &,
+  .close:focus & {
+    fill: $accent-color;
+  }
+}

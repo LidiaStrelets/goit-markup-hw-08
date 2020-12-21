@@ -1,0 +1,32 @@
+.feature__title {
+  /* заголовок пункта списка */
+  color: $headers-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.feature-list__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.feature__description {
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin: 0;
+}
+.feature__icon {
+  @include flex-container;
+  background-color: $button-bcg-color;
+
+  max-width: 450px;
+  height: 120px;
+
+  margin-bottom: 30px;
+}

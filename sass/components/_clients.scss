@@ -1,0 +1,30 @@
+.client-list {
+  @include flex-container($justif: space-between, $align: stretch);
+  flex-wrap: wrap;
+}
+.client-list__item {
+  &:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
+}
+.client-list__link {
+  @include flex-container;
+
+  width: 210px;
+  height: 90px;
+
+  border: 1px solid $icon-color;
+  transition: border-color 250ms $cubic;
+  &:focus,
+  &:hover {
+    border: 1px solid $accent-color;
+  }
+}
+.client-list__icon {
+  fill: $icon-color;
+  transition: fill 250ms $cubic;
+  .client-list__link:hover &,
+  .client-list__link:focus & {
+    fill: $accent-color;
+  }
+}

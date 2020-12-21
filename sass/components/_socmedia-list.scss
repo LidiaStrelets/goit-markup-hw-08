@@ -1,0 +1,49 @@
+.socmedia-list {
+  /* иконки соцсетей */
+  @include flex-container($align: stretch, $justif: space-between);
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 30px;
+}
+.socmedia__link {
+  /* ссылка на соцсеть */
+  @include flex-container;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  transition: background-color 250ms $cubic;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.socmedia__icon {
+  /* иконка соцсети */
+  fill: $icon-color;
+  transition: fill 250ms $cubic;
+  .socmedia__link:hover &,
+  .socmedia__link:focus & {
+    fill: $white-color;
+  }
+}
+.join {
+  margin-bottom: 60px;
+  &__list {
+    /* список соцсетей */
+    @include flex-container($align: stretch, $justif: space-between);
+    width: 206px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+.join__link {
+  background-color: $footer-icons-bcg-color;
+}
+.join__icon {
+  fill: $white-color;
+}

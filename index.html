@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб студия</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            <a class="header__logo" href=""><span class="header__logo--accent">Web</span>Studio</a>
+            <nav class="navigation">
+                <ul class="nav list">
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="contakts">
+                <a class="header__link" href="mailto:info@example.com">
+                    <svg width="16" height="12" class="contakts__icon">
+                        <use href="./images/spriteoptim.svg#envelope"></use>
+                    </svg>
+                    info@example.com</a>
+                <a class="header__link" href="tel:+380991111111">
+                    <svg width="10" height="16" class="contakts__icon">
+                        <use href="./images/spriteoptim.svg#smartphone"></use>
+                    </svg>
+                    +38 099 111 11 11</a>
+
+            </div>
+            <button type="button" class="menu-button">
+                <svg width="40px" height="40px" class="menu-button__icon">
+                    <use class="menu-button__icon--menu" href="./images/spriteoptim.svg#menu"></use>
+                    <!-- <use class="menu-button__icon--menu-close" href="./images/spriteoptim.svg#menu-close"></use> -->
+                </svg>
+            </button>
+        </div>
+        
+    </header>
+    <main>
+        <!--Герой-->
+        <section class="hero">
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <button class="btn hero__btn" data-modal-open>Заказать услугу</button>
+        </section>
+
+        <!--Особенности-->
+        <section class="section">
+            <div class="container">
+                <h2 class="visually-hidden">Особенности</h2>
+
+                <ul class="list feature-list">
+                    <li class="feature-list__item feature">
+                        <div class="feature__icon">
+                            <svg width="70" height="70" class="icon-feature">
+                                <use href="./images/spriteoptim.svg#group"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Внимание к деталям</h3>
+                        <p class="feature__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="feature-list__item feature">
+                        <div class="feature__icon">
+                            <svg width="70" height="70" class="icon-feature">
+                                <use href="./images/spriteoptim.svg#clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Пунктуальность</h3>
+                        <p class="feature__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="feature-list__item feature">
+                        <div class="feature__icon">
+                            <svg width="70" height="70" class="icon-feature">
+                                <use href="./images/spriteoptim.svg#diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Планирование</h3>
+                        <p class="feature__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="feature-list__item feature">
+                        <div class="feature__icon">
+                            <svg width="70" height="70" class="icon-feature">
+                                <use href="./images/spriteoptim.svg#astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="feature__title">Современные технологии</h3>
+                        <p class="feature__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Чем мы занимаемся-->
+        <section class="occupations__section">
+            <div class="container">
+                <h2 class="section__header">Чем мы занимаемся</h2>
+                <ul class="list occupations-list">
+                    <li class="occupations-list__item">
+                        <div class="occupation-card">
+                            <img width="370" height="294" src="./images/occupations/occupations1-optim.jpg" alt="Кодинг">
+                            <p class="occupation-card__description">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="occupations-list__item">
+                        <div class="occupation-card">
+                            <img width="370" height="294" src="./images/occupations/occupations2-optim.jpg" alt="Работа со смартфонами">
+                            <p class="occupation-card__description">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="occupations-list__item">
+                        <div class="occupation-card">
+                            <img width="370" height="294" src="./images/occupations/occupations3-optim.jpg" alt="Работа с цветовой палитрой">
+                            <p class="occupation-card__description">Дизайнерские решения</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Команда-->
+        <section class="team__section section">
+            <div class="container">
+                <h2 class="section__header">Наша команда</h2>
+                <ul class="team-list list">
+                    <li class="member">
+                        <article class="member__card">
+                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team1-opt.jpg"
+                                alt="Фото Игоря Демьяненко">
+                            <h3 class="member__name">Игорь Демьяненко</h3>
+                            <p class="member__profession">Product Designer</p>
+                            <ul class="list socmedia-list">
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#instagram"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#twitter"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#linkedin"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="member">
+                        <article class="member__card">
+                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team2-opt.jpg"
+                                alt="Фото Ольги Репиной">
+                            <h3 class="member__name">Ольга Репина</h3>
+                            <p class="member__profession">Frontend Developer</p>
+                            <ul class="list socmedia-list">
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#instagram"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#twitter"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#linkedin"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="member">
+                        <article class="member__card">
+                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team3-opt.jpg"
+                                alt="Фото Николая Тарасова">
+                            <h3 class="member__name">Николай Тарасов</h3>
+                            <p class="member__profession">Marketing</p>
+                            <ul class="list socmedia-list">
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#instagram"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#twitter"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#linkedin"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li class="member">
+                        <article class="member__card">
+                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team4-opt.jpg"
+                                alt="Фото Михаила Ермакова">
+                            <h3 class="member__name">Михаил Ермаков</h3>
+                            <p class="member__profession">UI Designer</p>
+                            <ul class="list socmedia-list">
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#instagram"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#twitter"></use>
+                                        </svg></a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#facebook"></use>
+                                        </svg>
+                                    </a></li>
+                                <li><a class="socmedia__link" href="">
+                                        <svg width="20" height="20" class="socmedia__icon">
+                                            <use href="./images/spriteoptim.svg#linkedin"></use>
+                                        </svg>
+                                    </a></li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Постоянные клиенты -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__header">Постоянные клиенты</h2>
+                <ul class="list client-list">
+                    <li class="client-list__item"><a class="client-list__link" href="">
+                            <svg width="44" height="49" class="client-list__icon">
+                                <use href="./images/spriteoptim.svg#logo1"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a class="client-list__link" href="">
+                            <svg width="40" height="52" class="client-list__icon">
+                                <use href="./images/spriteoptim.svg#logo2"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a class="client-list__link" href="">
+                            <svg width="41" height="43" class="client-list__icon">
+                                <use href="./images/spriteoptim.svg#logo3"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a class="client-list__link" href="">
+                            <svg width="80" height="42" class="client-list__icon">
+                                <use href="./images/spriteoptim.svg#logo4"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a class="client-list__link" href="">
+                            <svg width="59" height="47" class="client-list__icon">
+                                <use href="./images/spriteoptim.svg#logo5"></use>
+                            </svg>
+                        </a></li>
+                    <li class="client-list__item"><a class="client-list__link" href="">
+                            <svg width="88" height="45" class="client-list__icon">
+                                <use href="./images/spriteoptim.svg#logo6"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="logo-box"><a class="footer__logo" href=""><span class="footer__logo--accent">Web</span>Studio</a>
+            <address class="address">
+                <p class="address__city">г. Киев, пр-т Леси Украинки, 26</p>
+                <a class="footer__link address__mail" href="mailto:info@example.com">info@example.com</a>
+                <a class="footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address></div>
+          
+            <div class="join">
+                <b class="footer-area__title">присоединяйтесь</b>
+                <ul class="list join__list">
+                    <li><a class="socmedia__link join__link" href="">
+                            <svg width="20" height="20" class="join__icon">
+                                <use href="./images/spriteoptim.svg#instagram"></use>
+                            </svg></a></li>
+                    <li><a class="socmedia__link join__link" href="">
+                            <svg width="20" height="20" class="join__icon">
+                                <use href="./images/spriteoptim.svg#twitter"></use>
+                            </svg></a></li>
+                    <li><a class="socmedia__link join__link" href="">
+                            <svg width="20" height="20" class="join__icon">
+                                <use href="./images/spriteoptim.svg#facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li><a class="socmedia__link join__link" href="">
+                            <svg width="20" height="20" class="join__icon">
+                                <use href="./images/spriteoptim.svg#linkedin"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="signup">
+                <form>
+                    <b class="footer-area__title">Подпишитесь на рассылку</b>
+                    <input class="signup__input" type="email" name="email" id="email" placeholder="E-mail"> 
+                    <button class="btn signup__btn">Подписаться
+                        <svg width="24" height="24" class="signup__icon">
+                            <use href="./images/spriteoptim.svg#plane"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="form">
+                
+                <div class="form__field">
+                    <label class="form__label" for="name">Имя</label>
+                    <svg width="18" height="18" class="form__icon">
+                        <use href="./images/spriteoptim.svg#name"></use>
+                    </svg>
+                    <input class="form__input" type="text" id="name" name="name">
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="tel">Телефон</label>
+                    <svg width="18" height="18" class="form__icon">
+                        <use href="./images/spriteoptim.svg#tel"></use>
+                    </svg>
+                    <input class="form__input" type="tel" id="tel" name="tel">
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="mail">Почта</label>
+                    <svg width="18" height="18" class="form__icon">
+                        <use href="./images/spriteoptim.svg#email"></use>
+                    </svg>
+                    <input class="form__input" type="email" id="mail" name="email">
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="comment">Комментарий</label>
+                    <textarea class="form__input form__textarea" id="comment" name="comment" placeholder="Введите текст"></textarea>
+                </div>
+            </form>
+                <div class="checkbox">
+                   <label class="checkbox__label"> 
+                <input  class="checkbox__input visually-hidden" type="checkbox" name="agree" value="agree">
+                <div class="checkbox__choose">
+                        <svg width="16" height="15" class="checkbox__icon">
+                            <use href="./images/spriteoptim.svg#agree"></use>
+                        </svg>
+                </div>
+                    Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href=""> Условия договора</a></label>
+                </div>
+
+                <div class="form__btn-wrapper">
+                    <button class="btn form__btn" type="submit">Отправить</button>
+                </div>
+                
+            
+            <button data-modal-close class="close" type="button">
+                    <svg width="18" height="18" class="close__icon">
+                        <use href="./images/spriteoptim.svg#close"></use>
+                    </svg>
+                </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

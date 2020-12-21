@@ -1,0 +1,55 @@
+// .contakts {
+//   @include flex-container($justif: flex-start);
+//   margin-left: auto;
+// }
+%contakts__link {
+  font-size: 14px;
+  transition: color 250ms $cubic;
+}
+// .header__link {
+//   @include flex-container(inline-flex, $justif: flex-start);
+//   color: inherit;
+//   @extend %contakts__link;
+//   font-weight: 500;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+//   &:hover,
+//   &:focus {
+//     color: $accent-color;
+//   }
+// }
+// .contakts__icon {
+//   /* иконки в ссылках */
+//   margin-right: 10px;
+
+//   fill: $text-color;
+//   transition: fill 250ms $cubic;
+//   .header__link:hover &,
+//   .header__link:focus & {
+//     fill: $accent-color;
+//   }
+// }
+.address {
+  /* блок с адресом */
+  @include flex-container($justif: flex-start, $align: stretch);
+  flex-direction: column;
+
+  &__mail {
+    margin-bottom: 9px;
+  }
+}
+.footer__link {
+  /* контакты */
+  color: $footer-address-color;
+  @extend %contakts__link;
+  font-style: normal;
+  line-height: 1.71;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

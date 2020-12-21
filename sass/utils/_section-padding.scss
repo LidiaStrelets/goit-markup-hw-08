@@ -1,0 +1,7 @@
+@mixin section-padding($padding-top, $padding-bottom) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+.section {
+  @include section-padding(60px, 60px);
+}
