@@ -196,15 +196,15 @@ img {
 }
 
 .hero__title {
+  display: inline-block;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   text-transform: uppercase;
-  width: 420px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-top: 0;
   padding-top: 118px;
-  padding-left: 60px;
 }
 
 .hero__btn {
