@@ -1,11 +1,25 @@
-.navigation {
-  @media screen and(max-width: 767px) {
-    display: none;
-  }
+// .navigation {
+//   @media screen and(max-width: 767px) {
+//     display: none;
+//   }
+// }
+// .contakts {
+//   @media screen and(max-width: 767px) {
+//     display: none;
+//   }
+// }
+header {
+  position: relative;
 }
-.contakts {
-  @media screen and(max-width: 767px) {
-    display: none;
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: $white-color;
+  width: 100%;
+  &.is-open {
+    display: block;
   }
 }
 .menu-button {
@@ -25,4 +39,13 @@
   .menu-button:focus & {
     fill: $accent-color;
   }
+}
+.menu-button__icon--menu-close {
+  display: none;
+}
+.menu-button.is-open .menu-button__icon--menu-close {
+  display: block;
+}
+.menu-button.is-open .menu-button__icon--menu {
+  display: none;
 }

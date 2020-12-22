@@ -18,31 +18,34 @@
     <header>
         <div class="container header__container">
             <a class="header__logo" href=""><span class="header__logo--accent">Web</span>Studio</a>
-            <nav class="navigation">
-                <ul class="nav list">
-                    <li class="nav__item"><a class="nav__link nav__link--current" href="">Студия</a></li>
-                    <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
-                    
-                </ul>
-            </nav>
-            <div class="contakts">
-                <a class="header__link" href="mailto:info@example.com">
-                    <svg width="16" height="12" class="contakts__icon">
-                        <use href="./images/spriteoptim.svg#envelope"></use>
-                    </svg>
-                    info@example.com</a>
-                <a class="header__link" href="tel:+380991111111">
-                    <svg width="10" height="16" class="contakts__icon">
-                        <use href="./images/spriteoptim.svg#smartphone"></use>
-                    </svg>
-                    +38 099 111 11 11</a>
-
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+                <nav class="navigation">
+                    <ul class="nav list">
+                        <li class="nav__item"><a class="nav__link nav__link--current" href="">Студия</a></li>
+                        <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                
+                    </ul>
+                </nav>
+                <div class="contakts">
+                    <a class="header__link" href="mailto:info@example.com">
+                        <svg width="16" height="12" class="contakts__icon">
+                            <use href="./images/spriteoptim.svg#envelope"></use>
+                        </svg>
+                        info@example.com</a>
+                    <a class="header__link" href="tel:+380991111111">
+                        <svg width="10" height="16" class="contakts__icon">
+                            <use href="./images/spriteoptim.svg#smartphone"></use>
+                        </svg>
+                        +38 099 111 11 11</a>
+                
+                </div>
             </div>
-            <button type="button" class="menu-button">
-                <svg width="40px" height="40px" class="menu-button__icon">
+
+            <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="mobile-menu"> 
+                <svg width="40px" height="40px" class="menu-button__icon" aria-label="Переключатель мобильного меню">
                     <use class="menu-button__icon--menu" href="./images/spriteoptim.svg#menu"></use>
-                    <!-- <use class="menu-button__icon--menu-close" href="./images/spriteoptim.svg#menu-close"></use> -->
+                    <use class="menu-button__icon--menu-close" href="./images/spriteoptim.svg#menu-close"></use>
                 </svg>
             </button>
         </div>
@@ -386,6 +389,7 @@
         </div>
     </div>
 
+     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

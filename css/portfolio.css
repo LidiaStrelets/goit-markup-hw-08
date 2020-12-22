@@ -79,6 +79,10 @@ img {
   margin-bottom: 50px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -149,16 +153,21 @@ img {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
-  .navigation {
-    display: none;
-  }
+header {
+  position: relative;
 }
 
-@media screen and (max-width: 767px) {
-  .contakts {
-    display: none;
-  }
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.mobile-menu.is-open {
+  display: block;
 }
 
 .menu-button {
@@ -182,6 +191,18 @@ img {
 .menu-button:hover .menu-button__icon,
 .menu-button:focus .menu-button__icon {
   fill: #2196f3;
+}
+
+.menu-button__icon--menu-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon--menu-close {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon--menu {
+  display: none;
 }
 
 .socmedia-list {
