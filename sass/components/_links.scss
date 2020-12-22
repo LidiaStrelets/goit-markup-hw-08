@@ -1,38 +1,59 @@
-// .contakts {
-//   @include flex-container($justif: flex-start);
-//   margin-left: auto;
-// }
+.contakts {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
 %contakts__link {
-  font-size: 14px;
+  font-size: 18px;
+  @media screen and(min-width: $tablet) {
+    font-size: 14px;
+  }
   transition: color 250ms $cubic;
 }
-// .header__link {
-//   @include flex-container(inline-flex, $justif: flex-start);
-//   color: inherit;
-//   @extend %contakts__link;
-//   font-weight: 500;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
+.header__link {
+  @include flex-container(inline-flex, $justif: flex-start);
+  color: inherit;
+  @extend %contakts__link;
+  font-weight: 500;
+  line-height: 1.16;
+  @media screen and(min-width: $tablet) {
+    line-height: 1.14;
+  }
+  letter-spacing: 0.02em;
 
-//   &:not(:last-child) {
-//     margin-right: 50px;
-//   }
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//   }
-// }
-// .contakts__icon {
-//   /* иконки в ссылках */
-//   margin-right: 10px;
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &:first-child {
+    margin-bottom: 16px;
+    @media screen and(min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+  }
+  &:last-child {
+    margin-bottom: 60px;
+    @media screen and(min-width: $tablet) {
+      margin-bottom: 0px;
+    }
+  }
+}
+.contakts__icon {
+  /* иконки в ссылках */
+  margin-right: 10px;
 
-//   fill: $text-color;
-//   transition: fill 250ms $cubic;
-//   .header__link:hover &,
-//   .header__link:focus & {
-//     fill: $accent-color;
-//   }
-// }
+  fill: $text-color;
+  transition: fill 250ms $cubic;
+  .header__link:hover &,
+  .header__link:focus & {
+    fill: $accent-color;
+  }
+}
 .address {
   /* блок с адресом */
   @include flex-container($justif: flex-start, $align: stretch);

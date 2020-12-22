@@ -6,7 +6,9 @@
   text-align: center;
 }
 .logo-box {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 .address__city {
   /* адрес */
@@ -29,7 +31,16 @@
 
   margin-bottom: 20px;
 }
-
+.tablet__footer {
+  @media screen and(min-width: $tablet) {
+    @include flex-container($justif: space-around);
+  }
+}
+.signup {
+  @media screen and(min-width: $tablet) {
+    margin-top: 60px;
+  }
+}
 .signup__input {
   display: block;
   margin-left: auto;

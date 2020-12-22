@@ -1,6 +1,12 @@
 .hero {
   height: 400px;
   max-width: 480px;
+  @media screen and(min-width: $tablet) {
+    max-width: 768px;
+    @include flex-container($justif: flex-start);
+
+    flex-direction: column;
+  }
   margin-left: auto;
   margin-right: auto;
 

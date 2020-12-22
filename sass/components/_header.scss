@@ -1,26 +1,106 @@
-// .navigation {
-//   @media screen and(max-width: 767px) {
-//     display: none;
-//   }
-// }
-// .contakts {
-//   @media screen and(max-width: 767px) {
-//     display: none;
-//   }
-// }
 header {
   position: relative;
 }
 .mobile-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: $white-color;
-  width: 100%;
-  &.is-open {
-    display: block;
+  @media screen and(max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $white-color;
+    width: 100%;
+    &.is-open {
+      display: block;
+      border-top: 1px solid $port-header-border;
+    }
+
+    text-align: center;
+    & .header__link {
+      display: block;
+    }
   }
+  @media screen and(min-width: $tablet) {
+    @include flex-container($justif: space-between);
+    margin-left: 68px;
+  }
+}
+.header__container {
+  @media screen and(min-width: $tablet) {
+    @include flex-container($justif: flex-start);
+  }
+}
+.nav {
+  @media screen and(min-width: $tablet) {
+    @include flex-container($align: stretch, $justif: flex-start);
+  }
+}
+.nav__item:not(:last-child) {
+  @media screen and(min-width: $tablet) {
+    margin-right: 50px;
+  }
+}
+.navigation {
+  @media screen and(max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: $tablet) {
+    margin-right: 68px;
+  }
+}
+.nav__item {
+  @media screen and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.nav__link {
+  position: relative;
+
+  display: inline-block;
+  @media screen and(min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  color: $headers-color;
+  transition: color 250ms $cubic;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  @media screen and(min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--current {
+    color: $accent-color;
+  }
+  &--current::after {
+    position: absolute;
+    @media screen and(min-width: $tablet) {
+      bottom: 0;
+    }
+    bottom: -8px;
+    left: 0;
+
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 4px;
+
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+.header__container {
+  position: relative;
 }
 .menu-button {
   border: none;
@@ -31,6 +111,9 @@ header {
   &:hover {
     cursor: pointer;
   }
+  @media screen and(min-width: $tablet) {
+    display: none;
+  }
 }
 .menu-button__icon {
   fill: $black-color;
@@ -40,11 +123,12 @@ header {
     fill: $accent-color;
   }
 }
+
 .menu-button__icon--menu-close {
   display: none;
-}
-.menu-button.is-open .menu-button__icon--menu-close {
-  display: block;
+  .menu-button.is-open & {
+    display: block;
+  }
 }
 .menu-button.is-open .menu-button__icon--menu {
   display: none;

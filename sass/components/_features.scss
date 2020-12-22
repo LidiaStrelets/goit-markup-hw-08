@@ -10,9 +10,26 @@
   margin-top: 0;
   margin-bottom: 10px;
 }
+.feature-list {
+  @media screen and(min-width: $tablet) {
+    @include flex-container($justif: space-between, $align: stretch);
+    flex-wrap: wrap;
+  }
+  &__item {
+    @media screen and(min-width: $tablet) {
+      width: 354px;
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
 .feature-list__item {
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and(max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 }
 .feature__description {

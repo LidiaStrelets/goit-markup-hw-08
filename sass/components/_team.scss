@@ -3,10 +3,26 @@
   background-color: $button-bcg-color;
 }
 .member {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and(min-width: $tablet) {
+    width: 354px;
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
   }
 }
+.team-list {
+  @media screen and(min-width: $tablet) {
+    @include flex-container($justif: space-between, $align: stretch);
+    flex-wrap: wrap;
+  }
+}
+
 .member__card {
   /* карточка члена команды */
   font-size: 16px;
