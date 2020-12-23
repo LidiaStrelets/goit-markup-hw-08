@@ -1,5 +1,38 @@
 .occupations__section {
+  display: block;
+  @include section-padding(0, 94px);
+
   @media screen and(max-width: 1599px) {
     display: none;
+  }
+}
+.occupations-list {
+  @include flex-container($justif: space-between, $align: stretch);
+
+  &__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+.occupation-card {
+  /* обертка для картинки и подписи поверх */
+  position: relative;
+  &__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+    margin: 0;
+    padding-top: 27px;
+
+    background-color: $wedo-bgc;
+    color: $white-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
   }
 }

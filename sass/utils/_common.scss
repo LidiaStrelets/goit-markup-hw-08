@@ -49,10 +49,6 @@ img {
   overflow: hidden;
 }
 .container {
-  //   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  min-width: 210px;
   @media screen and(min-width: $smartphone) {
     width: 480px;
     margin: 0 auto;
@@ -60,7 +56,12 @@ img {
   @media screen and(min-width: $tablet) {
     width: 768px;
   }
-  // position: relative;
+  @media screen and(min-width: $desctop) {
+    width: 1200px;
+  }
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 210px;
 }
 .section__header {
   /* заголовки секций */

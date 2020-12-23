@@ -34,7 +34,9 @@
   @media screen and(max-width: 767px) {
     margin-bottom: 60px;
   }
-
+  // @media screen and(min-width: $desctop) {
+  //   margin-right: 93px;
+  // }
   &__list {
     /* список соцсетей */
     @include flex-container($align: stretch, $justif: space-between);

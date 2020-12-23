@@ -16,47 +16,42 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <header>
-      <div class="container header__container port-header">
-        <a class="header__logo" href=""
-          ><span class="header__logo--accent">Web</span>Studio</a
-        >
+  <header>
+    <div class="container header__container port-header">
+      <a class="header__logo" href=""><span class="header__logo--accent">Web</span>Studio</a>
+      <div class="mobile-menu" id="mobile-menu" data-menu>
         <nav class="navigation">
           <ul class="nav list">
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="">Портфолио</a>
-            </li>
+            <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
+            <li class="nav__item"><a class="nav__link nav__link--current" href="">Портфолио</a></li>
             <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+  
           </ul>
         </nav>
         <div class="contakts">
-          <a class="contakts__link header__link" href="mailto:info@example.com">
+          <a class="header__link" href="mailto:info@example.com">
             <svg width="16" height="12" class="contakts__icon">
               <use href="./images/spriteoptim.svg#envelope"></use>
             </svg>
-            info@example.com</a
-          >
-          <a class="contakts__link header__link" href="tel:+380991111111">
+            info@example.com</a>
+          <a class="header__link" href="tel:+380991111111">
             <svg width="10" height="16" class="contakts__icon">
               <use href="./images/spriteoptim.svg#smartphone"></use>
             </svg>
-            +38 099 111 11 11</a
-          >
+            +38 099 111 11 11</a>
+  
         </div>
-        <button type="button" class="menu-button">
-          <svg width="40px" height="40px" class="menu-button__icon">
-            <use
-              class="menu-button__icon--menu"
-              href="./images/spriteoptim.svg#menu"
-            ></use>
-            <!-- <use class="menu-button__icon--menu-close" href="./images/spriteoptim.svg#menu-close"></use> -->
-          </svg>
-        </button>
       </div>
-    </header>
+  
+      <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40px" height="40px" class="menu-button__icon" aria-label="Переключатель мобильного меню">
+          <use class="menu-button__icon--menu" href="./images/spriteoptim.svg#menu"></use>
+          <use class="menu-button__icon--menu-close" href="./images/spriteoptim.svg#menu-close"></use>
+        </svg>
+      </button>
+    </div>
+  
+  </header>
     <main>
       <section class="section">
         <div class="container">
@@ -317,73 +312,55 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer__container">
-        <div class="logo-box">
-          <a class="footer__logo" href=""
-            ><span class="footer__logo--accent">Web</span>Studio</a
-          >
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="tablet__footer">
+        <div class="logo-box"><a class="footer__logo" href=""><span class="footer__logo--accent">Web</span>Studio</a>
           <address class="address">
             <p class="address__city">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer__link address__mail" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-            <a class="footer__link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
+            <a class="footer__link address__mail" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
           </address>
         </div>
-
+  
         <div class="join">
           <b class="footer-area__title">присоединяйтесь</b>
           <ul class="list join__list">
-            <li>
-              <a class="socmedia__link join__link" href="">
+            <li><a class="socmedia__link join__link" href="">
                 <svg width="20" height="20" class="join__icon">
-                  <use href="./images/spriteoptim.svg#instagram"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a class="socmedia__link join__link" href="">
+                  <use href="./images/spriteoptim.svg#instagram"></use>
+                </svg></a></li>
+            <li><a class="socmedia__link join__link" href="">
                 <svg width="20" height="20" class="join__icon">
-                  <use href="./images/spriteoptim.svg#twitter"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a class="socmedia__link join__link" href="">
+                  <use href="./images/spriteoptim.svg#twitter"></use>
+                </svg></a></li>
+            <li><a class="socmedia__link join__link" href="">
                 <svg width="20" height="20" class="join__icon">
                   <use href="./images/spriteoptim.svg#facebook"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a class="socmedia__link join__link" href="">
+              </a></li>
+            <li><a class="socmedia__link join__link" href="">
                 <svg width="20" height="20" class="join__icon">
                   <use href="./images/spriteoptim.svg#linkedin"></use>
                 </svg>
-              </a>
-            </li>
+              </a></li>
           </ul>
         </div>
-        <div class="signup">
-          <form>
-            <b class="footer-area__title">Подпишитесь на рассылку</b>
-            <input
-              class="signup__input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
-            <button class="btn signup__btn">
-              Подписаться
-              <svg width="24" height="24" class="signup__icon">
-                <use href="./images/spriteoptim.svg#plane"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
       </div>
-    </footer>
+      <div class="signup">
+        <form>
+          <b class="footer-area__title">Подпишитесь на рассылку</b>
+          <input class="signup__input" type="email" name="email" id="email" placeholder="E-mail">
+          <button class="btn signup__btn">Подписаться
+            <svg width="24" height="24" class="signup__icon">
+              <use href="./images/spriteoptim.svg#plane"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  
+  </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

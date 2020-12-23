@@ -16,11 +16,14 @@
     flex-wrap: wrap;
   }
   &__item {
-    @media screen and(min-width: $tablet) {
+    @media screen and(min-width: $tablet) and(max-width: 1599px) {
       width: 354px;
       &:nth-child(-n + 2) {
         margin-bottom: 30px;
       }
+    }
+    @media screen and(min-width: $desctop) {
+      width: 270px;
     }
   }
 }

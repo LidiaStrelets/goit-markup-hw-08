@@ -2,10 +2,22 @@
   /* форма либо контейнер нав */
   @include flex-container($align: stretch, $justif: flex-start);
   flex-wrap: wrap;
+  @media screen and(min-width: $tablet) {
+    justify-content: center;
+  }
+
   align-content: space-between;
   margin-bottom: 40px;
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: $desctop) {
+    margin-bottom: 50px;
+  }
 
-  min-height: 91px;
+  @media screen and(max-width: 767px) {
+    min-height: 91px;
+  }
 }
 .filter {
   /* метка либо кнопка */

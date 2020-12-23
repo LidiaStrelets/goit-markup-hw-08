@@ -1,5 +1,9 @@
 .team__section {
   @include section-padding(60px, 60px);
+  @media screen and(min-width: $desctop) {
+    @include section-padding(94px, 94px);
+  }
+
   background-color: $button-bcg-color;
 }
 .member {
@@ -9,11 +13,14 @@
     }
   }
 
-  @media screen and(min-width: $tablet) {
+  @media screen and(min-width: $tablet) and(max-width: 1599px) {
     width: 354px;
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
     }
+  }
+  @media screen and(min-width: $desctop) {
+    width: 270px;
   }
 }
 .team-list {

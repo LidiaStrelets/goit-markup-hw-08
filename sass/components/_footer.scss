@@ -1,13 +1,23 @@
+.footer__container {
+  @media screen and(min-width: $desctop) {
+    @include flex-container($align: baseline, $justif: flex-start);
+  }
+}
+
 .footer {
   background-color: $bgc;
   color: $white-color;
   @include section-padding(60px, 60px);
-
-  text-align: center;
+  @media screen and(max-width: 1599px) {
+    text-align: center;
+  }
 }
 .logo-box {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+  @media screen and(min-width: $desctop) {
+    margin-right: 70px;
   }
 }
 .address__city {
@@ -35,24 +45,35 @@
   @media screen and(min-width: $tablet) {
     @include flex-container($justif: space-around);
   }
+  @media screen and(min-width: $desctop) {
+    align-items: baseline;
+  }
 }
 .signup {
   @media screen and(min-width: $tablet) {
     margin-top: 60px;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 .signup__input {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  @media screen and(max-width: 1599px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
   @media screen and(min-width: 480px) {
     width: 450px;
   }
-
+  @media screen and(min-width: $desctop) {
+    width: 370px;
+    margin-right: 12px;
+  }
   height: 50px;
-  // margin-right: 12px;
-  margin-bottom: 20px;
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -63,9 +84,6 @@
   color: $footer-address-color;
   &::placeholder {
     color: $footer-address-color;
-
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 }
 .signup__btn {

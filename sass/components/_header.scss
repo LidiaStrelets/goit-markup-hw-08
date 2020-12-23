@@ -2,6 +2,7 @@ header {
   position: relative;
 }
 .mobile-menu {
+  z-index: 100;
   @media screen and(max-width: 767px) {
     display: none;
     position: absolute;
@@ -22,6 +23,10 @@ header {
   @media screen and(min-width: $tablet) {
     @include flex-container($justif: space-between);
     margin-left: 68px;
+  }
+  @media screen and(min-width: $desctop) {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 .header__container {
@@ -44,9 +49,12 @@ header {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  @media screen and(min-width: $tablet) {
+  @media screen and(min-width: $tablet) and(max-width: 1599px) {
     margin-right: 68px;
   }
+  // @media screen and(min-width: $desctop) {
+  //   margin-right: 305px;
+  // }
 }
 .nav__item {
   @media screen and(max-width: 767px) {
