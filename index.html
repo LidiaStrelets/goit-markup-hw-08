@@ -110,19 +110,34 @@
                 <ul class="list occupations-list">
                     <li class="occupations-list__item">
                         <div class="occupation-card">
-                            <img width="370" height="294" src="./images/occupations/occupations1-optim.jpg" alt="Кодинг">
+                            <img width="370" height="294" 
+                            srcset="
+                            ./images/occupations/occupation1-1x.jpg 1x,
+                            ./images/occupations/occupation1-2x.jpg 2x
+                            "
+                            src="./images/occupations/occupation1-1x.jpg" alt="Кодинг">
                             <p class="occupation-card__description">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="occupations-list__item">
                         <div class="occupation-card">
-                            <img width="370" height="294" src="./images/occupations/occupations2-optim.jpg" alt="Работа со смартфонами">
+                            <img width="370" height="294" 
+                            srcset="
+                            ./images/occupations/occupation2-1x.jpg 1x,
+                            ./images/occupations/occupation2-2x.jpg 2x
+                            "
+                            src="./images/occupations/occupation2-1x.jpg" alt="Работа со смартфонами">
                             <p class="occupation-card__description">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="occupations-list__item">
                         <div class="occupation-card">
-                            <img width="370" height="294" src="./images/occupations/occupations3-optim.jpg" alt="Работа с цветовой палитрой">
+                            <img width="370" height="294" 
+                            srcset="
+                            ./images/occupations/occupation3-1x.jpg 1x,
+                            ./images/occupations/occupation3-2x.jpg 2x
+                            "
+                            src="./images/occupations/occupation3-1x.jpg" alt="Работа с цветовой палитрой">
                             <p class="occupation-card__description">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -136,8 +151,19 @@
                 <ul class="team-list list">
                     <li class="member">
                         <article class="member__card">
-                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team1-opt.jpg"
-                                alt="Фото Игоря Демьяненко">
+                            <img class="member__photo"
+                            srcset="
+                            ./images/team-photos/mobile/member1-mobile-1x.jpg 450w,
+                            ./images/team-photos/mobile/member1-mobile-2x.jpg 900w,
+                            ./images/team-photos/tablet/member1-tablet-1x.jpg 354w,
+                            ./images/team-photos/tablet/member1-tablet-2x.jpg 708w,
+                            ./images/team-photos/desctop/member1-desctop-1x.jpg 270w,
+                            ./images/team-photos/desctop/member1-desctop-2x.jpg 540w
+                            "
+                            sizes="(min-width: 1600px) 270px, (min-width: 768px) 354px, 450px"
+                            src="./images/team-photos/mobile/member1-mobile-1x.jpg"
+                                alt="Фото Игоря Демьяненко"
+                                >
                             <h3 class="member__name">Игорь Демьяненко</h3>
                             <p class="member__profession">Product Designer</p>
                             <ul class="list socmedia-list">
@@ -164,7 +190,17 @@
                     </li>
                     <li class="member">
                         <article class="member__card">
-                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team2-opt.jpg"
+                            <img class="member__photo" 
+                            srcset="
+                            ./images/team-photos/mobile/member2-mobile-2x.jpg 900w,
+                            ./images/team-photos/mobile/member2-mobile-1x.jpg 450w,
+                            ./images/team-photos/tablet/member2-tablet-1x.jpg 354w,
+                            ./images/team-photos/tablet/member2-tablet-2x.jpg 708w,
+                            ./images/team-photos/desctop/member2-desctop-1x.jpg 270w,
+                            ./images/team-photos/desctop/member2-desctop-2x.jpg 540w
+                            "
+                            sizes="(min-width: 1600px) 270px, (min-width: 768px) 354px, 450px"
+                            src="./images/team-photos/mobile/member2-mobile-1x.jpg"
                                 alt="Фото Ольги Репиной">
                             <h3 class="member__name">Ольга Репина</h3>
                             <p class="member__profession">Frontend Developer</p>
@@ -192,7 +228,17 @@
                     </li>
                     <li class="member">
                         <article class="member__card">
-                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team3-opt.jpg"
+                            <img class="member__photo" 
+                            srcset="
+                            ./images/team-photos/mobile/member3-mobile-1x.jpg 450w,
+                            ./images/team-photos/mobile/member3-mobile-2x.jpg 900w,
+                            ./images/team-photos/tablet/member3-tablet-1x.jpg 354w,
+                            ./images/team-photos/tablet/member3-tablet-2x.jpg 708w,
+                            ./images/team-photos/desctop/member3-desctop-1x.jpg 270w,
+                            ./images/team-photos/desctop/member3-desctop-2x.jpg 540w
+                            "
+                            sizes="(min-width: 1600px) 270px, (min-width: 768px) 354px, 450px"
+                            src="./images/team-photos/mobile/member3-mobile-1x.jpg"
                                 alt="Фото Николая Тарасова">
                             <h3 class="member__name">Николай Тарасов</h3>
                             <p class="member__profession">Marketing</p>
@@ -220,7 +266,17 @@
                     </li>
                     <li class="member">
                         <article class="member__card">
-                            <img class="member__photo" width="270" height="260" src="./images/team-photos/team4-opt.jpg"
+                            <img class="member__photo" 
+                            srcset="
+                            ./images/team-photos/mobile/member4-mobile-1x.jpg 450w,
+                            ./images/team-photos/mobile/member4-mobile-2x.jpg 900w,
+                            ./images/team-photos/tablet/member4-tablet-1x.jpg 354w,
+                            ./images/team-photos/tablet/member4-tablet-2x.jpg 708w,
+                            ./images/team-photos/desctop/member4-desctop-1x.jpg 270w,
+                            ./images/team-photos/desctop/member4-desctop-2x.jpg 540w
+                            "
+                            sizes="(min-width: 1600px) 270px, (min-width: 768px) 354px, 450px"
+                            src="./images/team-photos/mobile/member4-mobile-1x.jpg"
                                 alt="Фото Михаила Ермакова">
                             <h3 class="member__name">Михаил Ермаков</h3>
                             <p class="member__profession">UI Designer</p>
