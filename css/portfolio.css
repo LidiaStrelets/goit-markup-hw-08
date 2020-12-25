@@ -732,11 +732,6 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .filter-collection {
     margin-bottom: 30px;
   }
 }
@@ -747,9 +742,15 @@ header {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 398px) and (max-width: 767px) {
   .filter-collection {
     min-height: 91px;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .filter-collection {
+    min-height: 144px;
   }
 }
 
@@ -803,9 +804,9 @@ header {
   margin: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .work-example {
-    width: 450px;
+    max-width: 450px;
   }
   .work-example:not(:last-child) {
     margin-bottom: 30px;

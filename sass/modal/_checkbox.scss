@@ -1,10 +1,18 @@
 .checkbox {
-  // padding-left: 40px;
-  // padding-right: 40px;
   margin-bottom: 30px;
+  @media screen and(max-width: 479px) {
+    padding-left: 20px;
+    position: relative;
+  }
 }
 .checkbox__choose {
   /* кастомный чекбокс */
+
+  @media screen and(max-width: 479px) {
+    top: 2px;
+    position: absolute;
+    left: -4px;
+  }
   display: inline-block;
   position: relative;
 
@@ -27,8 +35,13 @@
   }
 }
 .checkbox__label {
-  @include flex-container($justif: flex-start);
-
+  // @media screen and(max-width: 479px) {
+  //   position: relative;
+  //   margin-left: 20px;
+  // }
+  @media screen and(min-width: $smartphone) {
+    @include flex-container($justif: flex-start);
+  }
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;

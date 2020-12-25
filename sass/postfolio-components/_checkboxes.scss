@@ -2,21 +2,24 @@
   /* форма либо контейнер нав */
   @include flex-container($align: stretch, $justif: flex-start);
   flex-wrap: wrap;
+  align-content: space-between;
+
   @media screen and(min-width: $tablet) {
     justify-content: center;
-  }
-
-  align-content: space-between;
-  margin-bottom: 40px;
-  @media screen and(min-width: $tablet) {
     margin-bottom: 30px;
   }
+
+  margin-bottom: 40px;
+
   @media screen and(min-width: $desctop) {
     margin-bottom: 50px;
   }
 
-  @media screen and(max-width: 767px) {
+  @media screen and(min-width: 398px) and(max-width: 767px) {
     min-height: 91px;
+  }
+  @media screen and(max-width: 398px) {
+    min-height: 144px;
   }
 }
 .filter {
@@ -33,9 +36,7 @@
   &:not(:last-child) {
     margin-right: 8px;
   }
-  //   &:nth-child(-n + 3) {
-  //     margin-bottom: 15px;
-  //   }
+
   .filter-collection input:focus + & {
     background-color: $accent-color;
     color: $white-color;
