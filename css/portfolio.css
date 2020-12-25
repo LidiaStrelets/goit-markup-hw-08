@@ -804,7 +804,7 @@ header {
   margin: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .work-example {
     max-width: 450px;
   }
