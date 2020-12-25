@@ -27,7 +27,7 @@
   }
 }
 .checkbox__label {
-  @include flex-container($align: flex-end, $justif: flex-start);
+  @include flex-container($justif: flex-start);
 
   font-size: 12px;
   line-height: 1.17;
