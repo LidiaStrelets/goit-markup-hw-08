@@ -1176,11 +1176,11 @@ header {
   letter-spacing: 0.03em;
 }
 
-.checkbox__icon {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  fill: #ffffff;
+@media screen and (min-width: 1600px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {
@@ -1188,6 +1188,13 @@ header {
   font-size: 11px;
   position: relative;
   margin-left: 4px;
+}
+
+@media screen and (min-width: 1600px) {
+  .checkbox__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link::after {
@@ -1200,6 +1207,13 @@ header {
   height: 1px;
   background: #2196f3;
   border-radius: 2px;
+}
+
+.checkbox__icon {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  fill: #ffffff;
 }
 
 .form {

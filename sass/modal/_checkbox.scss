@@ -32,18 +32,19 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-}
-.checkbox__icon {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-
-  fill: $white-color;
+  @media screen and(min-width: $desctop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__link {
   color: $accent-color;
   // text-decoration: underline;
   font-size: 11px;
+  @media screen and(min-width: $desctop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   position: relative;
   margin-left: 4px;
   &::after {
@@ -59,4 +60,11 @@
     background: #2196f3;
     border-radius: 2px;
   }
+}
+.checkbox__icon {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  fill: $white-color;
 }
