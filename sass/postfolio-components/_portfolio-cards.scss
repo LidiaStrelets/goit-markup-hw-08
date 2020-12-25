@@ -26,7 +26,12 @@
       margin-bottom: 30px;
     }
   }
-
+  @media screen and(max-width: 1599px) {
+    width: 354px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   &__text-wrapper {
     /* контейнер для всего текста под картинкой */
     padding-left: 24px;

@@ -3,7 +3,7 @@
   max-width: 480px;
   width: 100%;
   background-image: linear-gradient(to right, $hero-bg-color, $hero-bg-color),
-    url(../.././images/mobile-hero-1x.jpg);
+    url(./../images/mobile-hero-1x.jpg);
   background-size: cover;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -14,12 +14,12 @@
           $hero-bg-color,
           $hero-bg-color
         ),
-        url(../.././images/mobile-hero-2x.jpg);
+        url(./../images/mobile-hero-2x.jpg);
     }
   }
   @media screen and(min-width: 481px) {
     background-image: linear-gradient(to right, $hero-bg-color, $hero-bg-color),
-      url(../.././images/tablet-hero-1x.jpg);
+      url(./../images/tablet-hero-1x.jpg);
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -30,7 +30,7 @@
             $hero-bg-color,
             $hero-bg-color
           ),
-          url(../.././images/tablet-hero-2x.jpg);
+          url(./../images/tablet-hero-2x.jpg);
       }
     }
   }
@@ -42,7 +42,7 @@
   }
   @media screen and(min-width: 769px) {
     background-image: linear-gradient(to right, $hero-bg-color, $hero-bg-color),
-      url(../.././images/desctop-hero-1x.jpg);
+      url(./../images/desctop-hero-1x.jpg);
     background-size: cover;
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -53,7 +53,7 @@
             $hero-bg-color,
             $hero-bg-color
           ),
-          url(../.././images/desctoop-hero-2x.jpg);
+          url(./../images/desctoop-hero-2x.jpg);
       }
     }
   }
@@ -89,6 +89,10 @@
     line-height: 1.36;
     max-width: 696px;
     padding-top: 200px;
+  }
+  @media screen and(max-width: 360px) {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 .hero__btn {
