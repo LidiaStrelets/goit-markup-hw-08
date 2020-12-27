@@ -72,13 +72,27 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+// .work-example__image-wrapper {
+//   @media screen and(max-width: 767px) {
+//     height: 294px;
+//   }
+// }
 .work-example__description {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  padding: 77px 24px;
+  @media screen and(min-width: $tablet) {
+    padding: 49px 24px;
+  }
+  @media screen and(min-width: $desctop) {
+    padding: 63px 24px;
+  }
+
   margin: 0;
 
   transform: translateY(100%);
