@@ -13,7 +13,7 @@
     }
   }
 
-  @media screen and(min-width: $tablet) and(max-width: 1599px) {
+  @media screen and(min-width: $tablet) and(max-width: 1199px) {
     width: 354px;
     &:nth-child(-n + 2) {
       margin-bottom: 30px;

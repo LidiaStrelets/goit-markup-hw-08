@@ -8,7 +8,7 @@
   color: $white-color;
   @include section-padding(60px, 60px);
   
-  @media screen and(max-width: 1599px) {
+  @media screen and(max-width: 1199px) {
     text-align: center;
   }
 }
@@ -57,7 +57,7 @@
   }
 }
 .signup__input {
-  @media screen and(max-width: 1599px) {
+  @media screen and(max-width: 1199px) {
     display: block;
     margin-left: auto;
     margin-right: auto;
