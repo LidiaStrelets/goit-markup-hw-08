@@ -34,12 +34,12 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .visually-hidden {
@@ -912,6 +912,10 @@ header {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.client-list__link:focus, .client-list__link:hover {
+  border: 1px solid #2196f3;
+}
+
 @media screen and (min-width: 480px) {
   .client-list__link {
     width: 210px;
@@ -922,10 +926,6 @@ header {
   .client-list__link {
     width: 170px;
   }
-}
-
-.client-list__link:focus, .client-list__link:hover {
-  border: 1px solid #2196f3;
 }
 
 .client-list__icon {

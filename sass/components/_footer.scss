@@ -3,11 +3,11 @@
     @include flex-container($align: baseline, $justif: flex-start);
   }
 }
-
 .footer {
   background-color: $bgc;
   color: $white-color;
   @include section-padding(60px, 60px);
+  
   @media screen and(max-width: 1599px) {
     text-align: center;
   }
