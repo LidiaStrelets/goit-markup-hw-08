@@ -85,14 +85,19 @@
   height: 100%;
   font-size: 18px;
   line-height: 1.56;
-  padding: 77px 24px;
+  padding: 10px;
+  @media screen and(max-width: 479px) {
+    overflow: scroll;
+  }
+  @media screen and(min-width: $smartphone) {
+    padding: 77px 24px;
+  }
   @media screen and(min-width: $tablet) {
-    padding: 49px 24px;
+    padding: 48px 24px;
   }
   @media screen and(min-width: $desctop) {
     padding: 63px 24px;
   }
-
   margin: 0;
 
   transform: translateY(100%);

@@ -754,6 +754,12 @@ header {
   }
 }
 
+@media screen and (max-width: 271px) {
+  .filter-collection {
+    min-height: 197px;
+  }
+}
+
 .filter {
   /* метка либо кнопка */
   color: #212121;
@@ -885,7 +891,7 @@ header {
   height: 100%;
   font-size: 18px;
   line-height: 1.56;
-  padding: 77px 24px;
+  padding: 10px;
   margin: 0;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -897,9 +903,21 @@ header {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (max-width: 479px) {
+  .work-example__description {
+    overflow: scroll;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .work-example__description {
+    padding: 77px 24px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .work-example__description {
-    padding: 49px 24px;
+    padding: 48px 24px;
   }
 }
 
