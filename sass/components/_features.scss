@@ -9,6 +9,9 @@
 
   margin-top: 0;
   margin-bottom: 10px;
+  @media screen and(min-width: $tablet) {
+    text-align: left;
+  }
 }
 .feature-list {
   @media screen and(min-width: $tablet) {
