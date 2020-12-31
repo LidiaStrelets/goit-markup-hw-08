@@ -43,11 +43,11 @@
 }
 .tablet__footer {
   @media screen and(min-width: $tablet) {
-    @include flex-container($justif: space-around, $align: baseline);
+    @include flex-container($justif: space-around, $align: end);
   }
-  // @media screen and(min-width: $desctop) {
-  //   align-items: baseline;
-  // }
+  @media screen and(min-width: $desctop) {
+    align-items: baseline;
+  }
 }
 .signup {
   @media screen and(min-width: $tablet) {
